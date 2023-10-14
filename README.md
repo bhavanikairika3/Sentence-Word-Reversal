@@ -1,3 +1,6 @@
+Question :  Take a sentence as an input and reverse every word in that sentence. 
+Example - This is a sunny day > shiT si a ynnus yad.
+
 Firstly, Lets Understand the question in detail : 
 Imagine you have a sentence made up of words, like this: "This is a sunny day."
 Now, the task is to reverse each word in the sentence. So, instead of reading each word from left to right, you read them from right to left, but the order of the words in the sentence stays the same.
@@ -9,7 +12,7 @@ function reverseWords(sentence)   = This line defines a function called "reverse
 
 const words = sentence.split(' ');   = Imagine the sentence as a string of words. This line splits the sentence into individual words wherever there's a space, and puts these words into a box called words. So, "This is a sunny day" becomes ["This", "is", "a", "sunny", "day"].
 
-const reversedWords = words.map(word => { ... });  = Now, we take each word from the box (like "This", "is", etc.) and For each word, we reverse its letters. For example, "This" becomes "sihT", "is" remains "si", and so on.
+const reversedWords = words.map(word =>   = Now, we take each word from the box (like "This", "is", etc.) and For each word, we reverse its letters. For example, "This" becomes "sihT", "is" remains "si", and so on.
 After reversing the letters, we put these new words into another box called reversedWords.
 
 const reversedSentence = reversedWords.join(' ');  =  Next, we take the reversed words from the box and join them back together into a sentence, with spaces in between each word. This forms a new sentence.
