@@ -1,14 +1,8 @@
-function reverseWords(sentence) 
+function reverseWords(sentence)
 {
-  const words = sentence.split(' ');
-  const reversedWords = words.map(word => 
-    {
-    const reversed = word.split('').reverse().join('');
-    return reversed;
-  });
-  const reversedSentence = reversedWords.join(' ');
-  return reversedSentence;
+    return sentence.split(' ').map(word => word.split('').reverse().join('')).join(' ');
 }
+
 const inputSentence = "Programming is Fun";
 const reversedSentence = reverseWords(inputSentence);
 console.log(reversedSentence);
