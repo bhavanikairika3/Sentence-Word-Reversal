@@ -1,6 +1,8 @@
-function reverseWords(sentence) {
+function reverseWords(sentence) 
+{
   const words = sentence.split(' ');
-  const reversedWords = words.map(word => {
+  const reversedWords = words.map(word => 
+    {
     const reversed = word.split('').reverse().join('');
     return reversed;
   });
